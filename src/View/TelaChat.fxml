@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="752.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaChatController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="566.0" prefWidth="771.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="753.0" prefWidth="1116.0" style="-fx-background-color: #618985;">
+               <children>
+                  <Label layoutX="206.0" layoutY="101.0" text="Nome da sala" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="200.0" layoutY="15.0" orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutY="623.0" prefHeight="130.0" prefWidth="1116.0" style="-fx-background-color: #618985;">
+               <children>
+                  <TextField fx:id="caixaMensagem" layoutX="310.0" layoutY="16.0" prefHeight="100.0" prefWidth="699.0" />
+                  <Button fx:id="botaoEnviar" layoutX="1022.0" layoutY="16.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="82.0" text="Enviar" />
+                  <Button layoutX="211.0" layoutY="16.0" mnemonicParsing="false" onAction="#botaoTodos" prefHeight="47.0" prefWidth="89.0" text="Todos" />
+                  <Button fx:id="botaoPrivado" layoutX="211.0" layoutY="62.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="89.0" text="Privado" />
+               </children>
+            </Pane>
+            <ScrollPane layoutY="438.0" prefHeight="315.0" prefWidth="200.0">
+              <content>
+                <AnchorPane fx:id="painelUsuarios" minHeight="0.0" minWidth="0.0" prefHeight="320.0" prefWidth="185.0" />
+              </content>
+            </ScrollPane>
+            <ScrollPane layoutY="139.0" prefHeight="252.0" prefWidth="200.0">
+              <content>
+                <AnchorPane fx:id="painelSalas" minHeight="0.0" minWidth="0.0" prefHeight="256.0" prefWidth="181.0" />
+              </content>
+            </ScrollPane>
+            <Pane prefHeight="88.0" prefWidth="1116.0" style="-fx-background-color: #96BBBB;">
+               <children>
+                  <Label layoutX="94.0" layoutY="21.0" text="Chatin malado" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Sans Demibold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="88.0" prefHeight="3.0" prefWidth="1116.0" />
+                  <Label fx:id="labelLogadoComo" layoutX="963.0" layoutY="55.0" text="Logado como:" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelUser" layoutX="1068.0" layoutY="56.0" text="User" textFill="#ee4848">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="75.0" fitWidth="72.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagens/logo_chat.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="7.0" layoutY="107.0" prefHeight="39.0" prefWidth="66.0" text="Salas" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="413.0" text="Usuários" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="200.0" layoutY="139.0" prefHeight="484.0" prefWidth="916.0">
+              <content>
+                <AnchorPane fx:id="painelMensagens" minHeight="0.0" minWidth="0.0" prefHeight="536.0" prefWidth="900.0" />
+              </content>
+            </ScrollPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
