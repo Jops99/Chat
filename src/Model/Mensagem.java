@@ -3,17 +3,15 @@ package Model;
 import java.sql.Timestamp;
 
 public class Mensagem {
-    private Sala idSala;
+    private Sala destinoSala;
     private Usuario remetente;  
     private Usuario destinatario;
     private Timestamp horaEnvio;
     private Long idMsg;
     private String conteudoMsg;
 
-    
     public Mensagem () {}
-            
-            
+                 
     public Mensagem(Usuario remetente, Usuario destinatario, Timestamp horaEnvio, String conteudoMsg) {
         this.remetente = remetente;
         this.destinatario = destinatario;
@@ -22,11 +20,11 @@ public class Mensagem {
     }
 
     public Sala getIdSala() {
-        return idSala;
+        return destinoSala;
     }
 
     public void setIdSala(Sala idSala) {
-        this.idSala = idSala;
+        this.destinoSala = destinoSala;
     }
 
     public Usuario getRemetente() {
