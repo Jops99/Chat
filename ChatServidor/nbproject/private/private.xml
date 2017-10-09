@@ -6,8 +6,6 @@
             <file>file:/C:/Users/jaops/Documents/NetBeansProjects/ChatServidor/src/chatservidor/ChatServidor.java</file>
             <file>file:/C:/Users/jaops/Documents/NetBeansProjects/ChatServidor/src/br/cefetmg/inf/chat/model/domain/Mensagem.java</file>
         </group>
-        <group>
-            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatServidor/src/br/cefetmg/inf/chat/util/db/JDBCPostgreSQLConnection.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
