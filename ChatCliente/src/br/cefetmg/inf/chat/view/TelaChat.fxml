@@ -65,10 +65,10 @@
             </Label>
             <TextArea fx:id="caixaMensagens" editable="false" layoutX="200.0" layoutY="62.0" prefHeight="301.0" prefWidth="552.0" />
             <TextField fx:id="caixaMensagem" layoutX="205.0" layoutY="363.0" prefHeight="89.0" prefWidth="476.0" />
-            <Button fx:id="botaoRemoverUsuario" layoutX="205.0" layoutY="462.0" mnemonicParsing="false" text="Remover Usuario" />
-            <Button fx:id="botaoCriarSala" layoutX="95.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #618985;" text="Criar Sala">
+            <Button fx:id="botaoRemoverUsuario" layoutX="205.0" layoutY="458.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="107.0" text="Remover Usuario" />
+            <Button id="botaoCriarSala" fx:id="botaoCriarSala" layoutX="95.0" layoutY="19.0" mnemonicParsing="false" onAction="#invocaCriarSala" style="-fx-background-color: #96BBBB;" stylesheets="@../../../../../../../src/br/cefetmg/inf/chat/view/CSSBotao.css" text="Criar Sala">
                <effect>
-                  <DropShadow />
+                  <DropShadow height="5.93" radius="2.465" width="5.93" />
                </effect>
             </Button>
             <Button fx:id="botaoEnviar" layoutX="681.0" layoutY="363.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="71.0" text="Enviar" />

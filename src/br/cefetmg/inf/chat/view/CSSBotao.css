@@ -1,0 +1,7 @@
+#botaoCriarSala:hover {
+    -fx-background-color: #84a5a5;
+}
+
+#botaoCriarSala:pressed {
+    -fx-background-color: #a7d1d1;
+}

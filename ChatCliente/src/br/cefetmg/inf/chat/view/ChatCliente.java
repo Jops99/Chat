@@ -16,7 +16,7 @@ public class ChatCliente extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("TelaCriarSala.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("TelaChat.fxml"));
         
         Scene scene = new Scene(root);
         

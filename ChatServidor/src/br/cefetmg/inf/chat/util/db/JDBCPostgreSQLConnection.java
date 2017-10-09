@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class JDBCPostgreSQLConnection implements br.cefetmg.inf.chat.util.db.ConnectionFactory{
     
     private final static String dbDriver = "org.postgresql.Driver";
-    private final static String dbURL = "jdbc:postgresql://localhost:5432/MultiplaEscolha";
+    private final static String dbURL = "jdbc:postgresql://localhost:5432/Chat";
     private final static String user = "postgres";
     private final static String pass = "admin";
     
