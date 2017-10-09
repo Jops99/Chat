@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="752.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="752.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cefetmg.inf.chat.controller.TelaChatController">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="566.0" prefWidth="771.0" VBox.vgrow="ALWAYS">
          <children>

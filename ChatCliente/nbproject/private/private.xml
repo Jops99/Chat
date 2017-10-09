@@ -9,5 +9,13 @@
             <file>file:/C:/Users/jaops/Documents/NetBeansProjects/ChatCliente/src/chatcliente/ChatCliente.java</file>
             <file>file:/C:/Users/jaops/Documents/NetBeansProjects/ChatCliente/src/chatcliente/FXMLDocumentController.java</file>
         </group>
+        <group>
+            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatCliente/src/br/cefetmg/inf/chat/controller/MainApp.java</file>
+            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatCliente/src/chatcliente/ChatCliente.java</file>
+            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatCliente/src/br/cefetmg/inf/chat/view/TelaChat.fxml</file>
+            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatCliente/src/br/cefetmg/inf/chat/controller/TelaChatController.java</file>
+            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatCliente/src/br/cefetmg/inf/chat/controller/TelaCriarSalaController.java</file>
+            <file>file:/C:/Users/playc/Documents/GitHub/Chat/ChatCliente/src/br/cefetmg/inf/chat/view/TelaCriarSala.fxml</file>
+        </group>
     </open-files>
 </project-private>
