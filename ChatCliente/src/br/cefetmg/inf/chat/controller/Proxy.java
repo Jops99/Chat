@@ -26,7 +26,7 @@ import java.util.logging.Logger;
 public class Proxy{
 
     String IPServidor = "localhost";
-    int PortaServidor = 2223;
+    int PortaServidor = 5432;
     ManterSala manterSala;
     TelaCriarSalaController atributos;
     TelaChatController controller;
@@ -34,6 +34,10 @@ public class Proxy{
     
     public Proxy(TelaChatController controller) {
         this.controller = controller;
+    }
+
+    public Proxy(TelaCriarSalaController atributos) {
+        this.atributos = atributos;
     }
     
     

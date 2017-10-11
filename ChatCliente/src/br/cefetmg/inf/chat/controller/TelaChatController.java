@@ -5,6 +5,8 @@
  */
 package br.cefetmg.inf.chat.controller;
 
+import br.cefetmg.inf.chat.model.domain.Mensagem;
+import br.cefetmg.inf.chat.model.domain.Usuario;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -42,18 +44,81 @@ public class TelaChatController implements Initializable {
     @FXML
     private Button botaoEnviar;
 
-    
+    public AnchorPane getScrollPaneSalas() {
+        return scrollPaneSalas;
+    }
+
+    public void setScrollPaneSalas(AnchorPane scrollPaneSalas) {
+        this.scrollPaneSalas = scrollPaneSalas;
+    }
+
+    public AnchorPane getScrollPaneUsuarios() {
+        return scrollPaneUsuarios;
+    }
+
+    public void setScrollPaneUsuarios(AnchorPane scrollPaneUsuarios) {
+        this.scrollPaneUsuarios = scrollPaneUsuarios;
+    }
+
+    public TextArea getCaixaMensagens() {
+        return caixaMensagens;
+    }
+
+    public void setCaixaMensagens(TextArea caixaMensagens) {
+        this.caixaMensagens = caixaMensagens;
+    }
+
+    public TextField getCaixaMensagem() {
+        return caixaMensagem;
+    }
+
+    public void setCaixaMensagem(TextField caixaMensagem) {
+        this.caixaMensagem = caixaMensagem;
+    }
+
+    public Button getBotaoRemoverUsuario() {
+        return botaoRemoverUsuario;
+    }
+
+    public void setBotaoRemoverUsuario(Button botaoRemoverUsuario) {
+        this.botaoRemoverUsuario = botaoRemoverUsuario;
+    }
+
+    public Button getBotaoCriarSala() {
+        return botaoCriarSala;
+    }
+
+    public void setBotaoCriarSala(Button botaoCriarSala) {
+        this.botaoCriarSala = botaoCriarSala;
+    }
+
+    public Button getBotaoEnviar() {
+        return botaoEnviar;
+    }
+
+    public void setBotaoEnviar(Button botaoEnviar) {
+        this.botaoEnviar = botaoEnviar;
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-    }    
+
+    }
 
     @FXML
     private void invocaCriarSala(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/TelaCriarSala.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("TelaCriarSala.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
-    }   
+    }
+
+    private void mandarMensagem() {
+        Proxy proxy = new Proxy(this);
+       // Usuario usr = new Usuario(Long.MIN_VALUE, nomUsuario, Boolean.TRUE);
+       // Mensagem msg = new Mensagem(remetente, destinatario, horaEnvio, conteudoMsg);
+       //  msg.setConteudoMsg(getCaixaMensagem().getText());
+       // proxy.enviarMensagem(msg);
+    }
 }

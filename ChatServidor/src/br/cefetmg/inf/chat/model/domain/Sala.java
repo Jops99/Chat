@@ -12,10 +12,9 @@ public class Sala {
     public Sala() {
     }
 
-    public Sala(Long idSala, String desSala) {
-        this.idSala = idSala;
+    public Sala(String desSala) {
         this.desSala = desSala;
-    }
+     }
 
     public Long getIdSala() {
         return idSala;
